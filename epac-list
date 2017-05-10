@@ -1,0 +1,32 @@
+
+;; Courtesy of http://stackoverflow.com/a/10093312
+
+;; Open `emacs --no-init-file', then use this
+
+(setq package-user-dir ("~/.emacs.d/packages"))
+
+										; list the packages you want
+;; carefully find the important ones
+;; Required:
+;;   exec-path-from-shell
+;;   magit
+;;   undo-tree
+;; (setq package-list '(auto-yasnippet company counsel csv csv-mode dired+ exec-path-from-shell flycheck god-mode groovy-mode haskell-mode hydra ivy-hydra magit git-commit magit-popup memoize projectile pkg-info epl rainbow-delimiters s swiper ivy undo-tree use-package diminish bind-key with-editor dash async yasnippet))
+(setq package-list '(exec-path-from-shell magit undo-tree))
+
+; list the repositories containing them
+(add-to-list 'package-archives '("melpa-stable" . "http://stable.melpa.org/packages/"))
+(add-to-list 'package-archives '("melpa-unstable" . "http://melpa.org/packages/"))
+(setq package-archive-priorities '(("melpa-stable" . 1000) ("melpa" . 100) ("gnu" . 0)))
+
+; activate all the packages (in particular autoloads)
+(package-initialize)
+
+; fetch the list of packages available
+(unless package-archive-contents
+  (package-refresh-contents))
+
+; install the missing packages
+(dolist (package package-list)
+  (unless (package-installed-p package)
+    (package-install package)))
