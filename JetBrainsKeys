@@ -1,0 +1,60 @@
+2017-05-10
+
+Unless otherwise noted, always remove conflicting bindings.
+Various emacs navigation bindings are still missing.
+
+Editor Actions
+	Clone Caret Above               ^C ↑
+	Clone Caret Below               ^C ↓
+	Decrease Font Size              ^X ^-
+	Delete                          ^D
+	Delete Line                     ^⇧⌫
+//						Delete to Word End              ^⌫    (Removed in favor of "kill")
+	Delete to Word Start            ^⌦    (I know that this makes no sense)
+	Increase Font Size              ^X ^=
+	Kill Selected Region            ^W
+	Save to Kill Ring               ⌥W
+	Kill to Word End                ^⌫
+	Kill to Word Start              ⌥⌫
+	Move Caret to Next Word         ⌥F
+	Move Caret to Previous Word     ⌥B
+	Reset Font Size                 ^X ^0
+	Split Line                      "open line"    (abbreviation)
+	Swap Selection Boundaries       ^X ^X
+	Tab                             ^C ⇥    (Remove ⇥)
+	Move Caret to Text Start        ⌥<
+	Move Caret to Text End          ⌥>
+	Toggle Insert/Overwrite         ^C O
+	Toggle Sticky Selection         ^␠
+	Emacs Tab                       ⇥       (Leave existing bindings)
+	
+Main Menu
+	Edit
+		Paste                   ^Y
+		Paste from History...   ⌥Y
+		Select All              ^X H
+	Edit > Macros (~=Macro)
+		Play Back Last ~        F4
+		Start/Stop ~ Recording  F3
+	View > Active Editor
+		Show Whitespaces        ^C W
+		Show Line Numbers       ^C L
+		Show Gutter Icons       ^C ^L
+	Navgate
+		Line/Column...          ^G G
+		File Structure          ⌘F10    (Because I've bound the default (⌘F12) to something else)
+	Navigate > Bookmarks
+		Toggle Bookmark         ⇧F3
+	Code > Completion
+		Basic                   ⌥⇥
+	Run
+		Debug                   ⌥⇧D     (Because ^D is rebound elsewhere)
+	Window > Editor Tabs
+		Split Vertically        ^X 3
+		Split Horizontally      ^X 2
+		Unsplit                 ^X 0
+		Unsplit All             ^X 1
+		Goto Next Splitter      ^X O
+Other
+	Switcher        ^X B
+
