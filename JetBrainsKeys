@@ -47,9 +47,11 @@ Main Menu
 		Toggle Bookmark         ⇧F3
 	Code > Completion
 		Basic                   ⌥⇥
+		Comment with Line Comment ⌥;
 	Run
 		Debug                   ⌥⇧D     (Because ^D is rebound elsewhere)
 	Window > Editor Tabs
+		Close                   ^X K
 		Split Vertically        ^X 3
 		Split Horizontally      ^X 2
 		Unsplit                 ^X 0
