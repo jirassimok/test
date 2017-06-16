@@ -36,6 +36,8 @@ Main Menu
 	Edit > Macros (~=Macro)
 		Play Back Last ~        F4
 		Start/Stop ~ Recording  F3
+	View
+		Quick Documentation     ⌥,
 	View > Active Editor
 		Show Whitespaces        ^C W
 		Show Line Numbers       ^C L
@@ -43,11 +45,12 @@ Main Menu
 	Navgate
 		Line/Column...          ^G G
 		File Structure          ⌘F10    (Because I've bound the default (⌘F12) to something else)
+		Declaration             ⌥.
 	Navigate > Bookmarks
 		Toggle Bookmark         ⇧F3
 	Code > Completion
 		Basic                   ⌥⇥
-		Comment with Line Comment ⌥;
+		Comment w/ Line Comment ⌥;
 	Run
 		Debug                   ⌥⇧D     (Because ^D is rebound elsewhere)
 	Window > Editor Tabs
